@@ -6,16 +6,12 @@ import android.content.SharedPreferences;
 
 public class AppController extends Application {
 
-    private static SharedPreferences sharedpreferences;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        sharedpreferences = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE);
+       SharedPref.init(this);
     }
 
-    public static SharedPreferences getSharedPreferences() {
-        return sharedpreferences;
-    }
 
 }

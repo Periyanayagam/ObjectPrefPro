@@ -17,16 +17,7 @@ import java.util.List;
 
 public class MyAdapter extends ArrayAdapter<User> {
 
-    TextView tv1, tv2, tv3;
-    private Context context;
     private List<User> users;
-
-
-    public void refresh(List<User> mList) {
-        this.users = mList;
-
-
-    }
 
     public MyAdapter(Context context, int inflater_list, List<User> users) {
         super(context, inflater_list, users);
@@ -46,14 +37,14 @@ public class MyAdapter extends ArrayAdapter<User> {
         }
 
         if (localView != null) {
-            tv1 = localView.findViewById(R.id.tv1);
-            tv2 = localView.findViewById(R.id.tv2);
-            tv3 = localView.findViewById(R.id.tv3);
+            TextView tv1 = localView.findViewById(R.id.tv1);
+            TextView tv2 = localView.findViewById(R.id.tv2);
             tv1.setText(data.getUserName());
             tv2.setText(data.getPassWord());
         }
 
         return localView;
     }
+
 
 }

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ObjectPrefPro</string>
+    <string name="login">Login</string>
+    <string name="view">View</string>
+    <string name="list">List</string>
+    <string name="login_to_save_in_object_and_view_to_see_stord_object_data">Login to save in Object and View to see stord object data</string>
+    <string name="username">Username (Android)</string>
+    <string name="password">Password</string>
+    <string name="enter_something_to_store_and_view_in_list">Enter something to store and view in list</string>
+    <string name="save">Save</string>
 </resources>
