@@ -14,7 +14,7 @@
    ```
   ### Get List from Pref
  ```
-   List<User> mList = SharedPref.getSharedList(User[].class, "userList");
+    List<User> mList = SharedPref.getSharedList("userList",User[].class);
  ```
     
  ### Get Object from Pref
